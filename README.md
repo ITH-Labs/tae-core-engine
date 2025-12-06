@@ -1,1 +1,1 @@
-# tae-core-engine
+# TAE Core Engine [![Continuous Integration](https://github.com/ITH-Labs/tae-core-engine/actions/workflows/build-test-publish-pipeline.yml/badge.svg)](https://github.com/ITH-Labs/tae-core-engine/actions/workflows/build-test-publish-pipeline.yml)

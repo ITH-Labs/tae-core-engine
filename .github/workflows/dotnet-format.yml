@@ -1,0 +1,15 @@
+name: Format Check
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  call-format:
+    uses: ITH-Labs/.github/.github/workflows/dotnet-format.yml@main
+    with:
+      project_path: "./"
+    permissions:
+      contents: read
+      packages: write
+    

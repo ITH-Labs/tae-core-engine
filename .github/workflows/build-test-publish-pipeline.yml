@@ -1,0 +1,23 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - feat/**
+  pull_request:
+    branches:
+      - main
+      - dev
+
+jobs:
+  call-template:
+    uses: ITH-Labs/.github/.github/workflows/dotnet-build-and-deploy.yml@main
+    with:
+      project_name: TAE.Core
+      project_path: TAE.Core
+      publish_branch: main
+    permissions:
+      contents: read
+      packages: write
